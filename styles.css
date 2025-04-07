@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b5c18e;
+    color: #2b2b2b;
+}
+
+header {
+    background-color: #007F73;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #2b2b2b;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 10px;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    color: #2b2b2b;
+}
+
+a {
+    color: #1C1678;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b99470;
+    color: #ffffff;
+    border-top: 1px solid #2b2b2b;
+    margin-top: 30px;
+}
