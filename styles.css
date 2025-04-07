@@ -1,62 +1,78 @@
-body, html {
+body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #b5c18e;
-    color: #2b2b2b;
+    font-family: 'Inter', sans-serif;
+    background: #f7f9fc;
+    color: #1e1e1e;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #007F73;
+.hero {
+    background: linear-gradient(to right, #007F73, #38a3a5);
     color: #ffffff;
+    padding: 60px 20px;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
 }
 
-header h1 {
+.hero h1 {
+    font-size: 2.5rem;
     margin: 0;
-    font-size: 2em;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.quote {
+    margin-top: 20px;
+    font-style: italic;
+    color: #e0f7fa;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #007F73;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.contact-buttons a:hover {
+    background: #f1f1f1;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-section {
-    margin-bottom: 30px;
+h2 {
+    color: #007F73;
+    border-bottom: 2px solid #007F73;
+    padding-bottom: 5px;
+    margin-top: 40px;
 }
 
-section h2 {
-    color: #2b2b2b;
-    border-bottom: 2px solid #2b2b2b;
-    padding-bottom: 10px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
 }
 
-.experience {
-    margin-bottom: 20px;
-}
-
-.experience h3 {
-    color: #2b2b2b;
-}
-
-a {
-    color: #1C1678;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+.cert-list, .exp-list {
+    padding-left: 20px;
 }
 
 footer {
+    background: #007F73;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
-    background-color: #b99470;
-    color: #ffffff;
-    border-top: 1px solid #2b2b2b;
-    margin-top: 30px;
+    margin-top: 40px;
 }
