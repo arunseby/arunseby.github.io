@@ -6,6 +6,12 @@
     <title>Arun Seby | DevSecOps Architect</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .project-card { background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.08); }
+        .project-card h3 { margin-top: 0; color: #007F73; }
+        .github-placeholder { font-style: italic; color: #777; text-align: center; margin-top: 10px; }
+    </style>
 </head>
 <body>
     <header class="hero">
@@ -16,7 +22,6 @@
             <div class="contact-buttons">
                 <a href="mailto:arunseby1@gmail.com">Email</a>
                 <a href="https://in.linkedin.com/in/arun-seby" target="_blank">LinkedIn</a>
-                <a href="Resume-Arun-Seby.pdf" download>Download Resume</a>
             </div>
         </div>
     </header>
@@ -52,25 +57,47 @@
         </section>
 
         <section>
-            <h2>Experience Snapshot</h2>
+            <h2>Professional Experience</h2>
+            <h3>FutureBlox Technologies Pvt Ltd, Trivandrum</h3>
             <ul class="exp-list">
-                <li><strong>DevSecOps Solution Architect</strong> – FutureBlox Technologies (Oct 2024–Present)<br>Leading infrastructure and security design, audit support, and automation strategy for a fintech platform.</li>
-                <li><strong>Technical Consultant – Cloud & DevOps</strong> – FutureBlox (2022–2024)<br>Delivered multi-account AWS infrastructure, CI/CD implementation, and cost optimization.</li>
-                <li><strong>Technical Specialist – DevOps & Cloud</strong> – Aurionpro Transit / SCSoft (2021–2022)<br>Handled Linux & DevOps strategy, IaC delivery, and infrastructure hardening.</li>
-                <li><strong>Technical Specialist – Linux Services</strong> – SCSoft (2020–2021)<br>Led a 10-member Linux support team and maintained 24x7 cloud operations.</li>
-                <li><strong>Senior Linux Support Engineer</strong> – SCSoft (2019–2020)</li>
-                <li><strong>Linux Support Engineer</strong> – SCSoft (2016–2019)</li>
+                <li><strong>Solutions Architect - DevSecOps</strong> (Oct 2024–Present)<br>Leading DevSecOps Team and architecture strategy for a fintech client. Overseeing automation, security practices, and audit readiness.</li>
+                <li><strong>Technical Consultant - Cloud and DevOps</strong> (Oct 2022–Oct 2024)<br>Led the Linux and DevOps team; managed cloud infrastructure using AWS Cloud and designed DevOps architecture using the IaC model.</li>
+            </ul>
+
+            <h3>Aurionpro Transit Pte Ltd (Formerly SCSoft), Trivandrum</h3>
+            <ul class="exp-list">
+                <li><strong>Technical Specialist - DevOps and Cloud</strong> (Apr 2021–Oct 2022)<br>Managed the Linux and DevOps team, developed cloud-native architecture, and supported production infrastructure on AWS.</li>
+                <li><strong>Technical Specialist - Linux Services</strong> (May 2020–Apr 2021)<br>Led a 10-member Linux team focused on security and uptime. Supported multiple production environments.</li>
+                <li><strong>Senior Linux Support Engineer</strong> (Apr 2019–May 2020)</li>
+                <li><strong>Linux Support Engineer</strong> (Apr 2016–Apr 2019)</li>
             </ul>
         </section>
 
         <section>
             <h2>Projects</h2>
-            <ul class="exp-list">
-                <li><strong>Cloud Migration:</strong> Migrated production workloads from Rackspace to AWS, reducing cost by 30%.</li>
-                <li><strong>Disaster Recovery:</strong> Designed an Active-Passive DR architecture using Terraform.</li>
-                <li><strong>Compliance Enablement:</strong> Enabled successful audit cycles with secure logging, IAM, and config practices.</li>
-                <li><strong>CI/CD Transformation:</strong> Built pipelines for automated testing and deployment on AWS.</li>
-            </ul>
+            <div class="gallery">
+                <div class="project-card">
+                    <h3>Cloud Migration</h3>
+                    <p>Migrated workloads from Rackspace to AWS; optimized architecture and reduced infra cost by 30%.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Disaster Recovery</h3>
+                    <p>Built DR infra using Terraform in an Active-Passive model ensuring minimal RTO/RPO.</p>
+                </div>
+                <div class="project-card">
+                    <h3>CI/CD Transformation</h3>
+                    <p>Created a robust GitHub Actions pipeline for automatic deployment and alerting on AWS.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Compliance Readiness</h3>
+                    <p>Helped fintech client pass multiple regulatory audits by improving infra logging and IAM policies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>GitHub Showcase</h2>
+            <p class="github-placeholder">No public repositories yet. Private repositories or internal projects showcased upon request.</p>
         </section>
 
         <section>
