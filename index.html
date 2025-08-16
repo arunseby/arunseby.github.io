@@ -1,106 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arun Seby | DevSecOps Architect</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
-        .project-card { background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.08); }
-        .project-card h3 { margin-top: 0; color: #007F73; }
-    </style>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Seby | DevSecOps Architect</title>
+
+  <!-- Fonts: Inter for body, Fira Code for terminal -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Arun Seby</h1>
-            <p class="tagline">DevSecOps Solution Architect &nbsp;|&nbsp; Cloud Infrastructure & Automation &nbsp;|&nbsp; AWS & GCP Certified</p>
-            <p class="quote">“Some things scale. Some things stay grounded.”</p>
-            <div class="contact-buttons">
-                <a href="mailto:arunseby1@gmail.com">Email</a>
-                <a href="https://in.linkedin.com/in/arun-seby" target="_blank">LinkedIn</a>
-            </div>
+  <!-- Terminal Hero -->
+  <header class="hero terminal-hero">
+    <div class="hero-content">
+      <div class="terminal-window" aria-label="terminal intro">
+        <div class="term-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="tab">/home/arun</span>
         </div>
-    </header>
+        <div class="term-body">
+          <p class="line"><span class="prompt">$</span> whoami</p>
+          <p class="line output">
+            <span id="typer"></span><span class="cursor" aria-hidden="true">█</span>
+          </p>
+          <p class="line"><span class="prompt">$</span> echo "DevSecOps • Cloud • Automation"</p>
+        </div>
+      </div>
 
-    <main class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>I'm a DevSecOps Architect with 9+ years of experience spanning Linux administration, DevOps automation, and cloud infrastructure design. I build scalable systems, drive automation, and bring strong security-first thinking to every environment I work in. From startups to fintech projects, I’ve delivered solutions that improve stability, reduce manual effort, and support growth.</p>
-        </section>
+      <div class="contact-buttons">
+        <a href="mailto:arunseby1@gmail.com">Email</a>
+        <a href="https://in.linkedin.com/in/arun-seby" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </header>
 
-        <section>
-            <h2>Certifications</h2>
-            <ul class="cert-list">
-                <li><strong>AWS Certified Solutions Architect – Associate</strong> (Valid through 2025)</li>
-                <li><strong>Google Cloud Associate Cloud Engineer</strong> (Valid through 2027)</li>
-                <li><strong>AWS Partner Accreditation (Technical)</strong> – 2023</li>
-                <li><strong>Certified MDR Professional – Ampcus Cyber</strong></li>
-            </ul>
-        </section>
+  <main class="container">
+    <section class="reveal">
+      <h2>About Me</h2>
+      <p>I'm a DevSecOps Architect with 9+ years of experience spanning Linux administration, DevOps automation, and cloud infrastructure design. I build scalable systems, drive automation, and bring strong security-first thinking to every environment I work in. From startups to fintech projects, I’ve delivered solutions that improve stability, reduce manual effort, and support growth.</p>
+    </section>
 
-        <section>
-            <h2>Skills & Tools</h2>
-            <div class="grid">
-                <div><strong>Cloud (AWS):</strong> EC2, S3, RDS, VPC, IAM, CloudTrail, CloudWatch, Security Hub, GuardDuty, Lambda, API Gateway, ECR, CloudFormation, SSM, SNS/SQS, AWS Config, ACM, CloudFront, Route 53</div>
-                <div><strong>Cloud (GCP):</strong> GCE, Cloud Storage, Cloud Functions, Pub/Sub, IAM, VPC</div>
-                <div><strong>DevOps & IaC:</strong> GitHub Actions, GitLab CI/CD, Jenkins, Terraform, CloudFormation, Ansible, Docker, Nexus, Bitbucket</div>
-                <div><strong>Monitoring:</strong> ELK Stack, Prometheus, Grafana, Datadog, CloudWatch Logs, New Relic, PRTG, Nagios</div>
-                <div><strong>Security & Compliance:</strong> IAM, GuardDuty, Security Hub, SonarQube, Nessus, PCI DSS, RBI SAR</div>
-                <div><strong>Scripting & Infra:</strong> Bash, Python (basic), Linux OS, Apache/Nginx, DNS/IP Management, Postfix, Zimbra, SFTP/SSH/rsync, WHM/cPanel, Virtualmin, Email Security</div>
-            </div>
-        </section>
+    <section class="reveal">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><strong>AWS Certified Solutions Architect – Associate</strong> (Valid through 2025)</li>
+        <li><strong>Google Cloud Associate Cloud Engineer</strong> (Valid through 2027)</li>
+        <li><strong>AWS Partner Accreditation (Technical)</strong> – 2023</li>
+        <li><strong>Certified MDR Professional – Ampcus Cyber</strong></li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Professional Experience</h2>
-            <h3>FutureBlox Technologies Pvt Ltd, Trivandrum</h3>
-            <ul class="exp-list">
-                <li><strong>Solutions Architect - DevSecOps</strong> (Oct 2024–Present)<br>Leading DevSecOps Team and architecture strategy for a fintech client. Overseeing automation, security practices, and audit readiness.</li>
-                <li><strong>Technical Consultant - Cloud and DevOps</strong> (Oct 2022–Oct 2024)<br>Led the Linux and DevOps team; managed cloud infrastructure using AWS Cloud and designed DevOps architecture using the IaC model.</li>
-            </ul>
+    <section class="reveal">
+      <h2>Skills &amp; Tools</h2>
+      <div class="grid">
+        <div><strong>Cloud (AWS):</strong> EC2, S3, RDS, VPC, IAM, CloudTrail, CloudWatch, Security Hub, GuardDuty, Lambda, API Gateway, ECR, CloudFormation, SSM, SNS/SQS, AWS Config, ACM, CloudFront, Route 53</div>
+        <div><strong>Cloud (GCP):</strong> GCE, Cloud Storage, Cloud Functions, Pub/Sub, IAM, VPC</div>
+        <div><strong>DevOps &amp; IaC:</strong> GitHub Actions, GitLab CI/CD, Jenkins, Terraform, CloudFormation, Ansible, Docker, Nexus, Bitbucket</div>
+        <div><strong>Monitoring:</strong> ELK Stack, Prometheus, Grafana, Datadog, CloudWatch Logs, New Relic, PRTG, Nagios</div>
+        <div><strong>Security &amp; Compliance:</strong> IAM, GuardDuty, Security Hub, SonarQube, Nessus, PCI DSS, RBI SAR</div>
+        <div><strong>Scripting &amp; Infra:</strong> Bash, Python (basic), Linux OS, Apache/Nginx, DNS/IP Management, Postfix, Zimbra, SFTP/SSH/rsync, WHM/cPanel, Virtualmin, Email Security</div>
+      </div>
+    </section>
 
-            <h3>Aurionpro Transit Pte Ltd (Formerly SCSoft), Trivandrum</h3>
-            <ul class="exp-list">
-                <li><strong>Technical Specialist - DevOps and Cloud</strong> (Apr 2021–Oct 2022)<br>Managed the Linux and DevOps team, developed cloud-native architecture, and supported production infrastructure on AWS.</li>
-                <li><strong>Technical Specialist - Linux Services</strong> (May 2020–Apr 2021)<br>Led a 10-member Linux support team and ensured uptime and cloud support for multiple clients.</li>
-                <li><strong>Senior Linux Support Engineer</strong> (Apr 2019–May 2020)<br>Handled Linux server management, client escalations, and web hosting support. Provided L2-level technical support for US-based clients.</li>
-                <li><strong>Linux Support Engineer</strong> (Apr 2016–Apr 2019)<br>Managed Linux servers and supported web hosting. Offered customer technical support for US-based clients.</li>
-            </ul>
-        </section>
+    <section class="reveal">
+      <h2>Professional Experience</h2>
+      <h3>FutureBlox Technologies Pvt Ltd, Trivandrum</h3>
+      <ul class="exp-list">
+        <li><strong>Solutions Architect - DevSecOps</strong> (Oct 2024–Present)<br>Leading DevSecOps Team and architecture strategy for a fintech client. Overseeing automation, security practices, and audit readiness.</li>
+        <li><strong>Technical Consultant - Cloud and DevOps</strong> (Oct 2022–Oct 2024)<br>Led the Linux and DevOps team; managed cloud infrastructure using AWS Cloud and designed DevOps architecture using the IaC model.</li>
+      </ul>
 
-        <section>
-            <h2>Projects</h2>
-            <div class="gallery">
-                <div class="project-card">
-                    <h3>Cloud Migration</h3>
-                    <p>Migrated workloads from Rackspace to AWS; optimized architecture and reduced infra cost by 30%.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Disaster Recovery</h3>
-                    <p>Built DR infra using Terraform in an Active-Passive model ensuring minimal RTO/RPO.</p>
-                </div>
-                <div class="project-card">
-                    <h3>CI/CD Transformation</h3>
-                    <p>Created a robust GitHub Actions pipeline for automatic deployment and alerting on AWS.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Compliance Readiness</h3>
-                    <p>Helped fintech client pass multiple regulatory audits by improving infra logging and IAM policies.</p>
-                </div>
-            </div>
-        </section>
+      <h3>Aurionpro Transit Pte Ltd (Formerly SCSoft), Trivandrum</h3>
+      <ul class="exp-list">
+        <li><strong>Technical Specialist - DevOps and Cloud</strong> (Apr 2021–Oct 2022)<br>Managed the Linux and DevOps team, developed cloud-native architecture, and supported production infrastructure on AWS.</li>
+        <li><strong>Technical Specialist - Linux Services</strong> (May 2020–Apr 2021)<br>Led a 10-member Linux support team and ensured uptime and cloud support for multiple clients.</li>
+        <li><strong>Senior Linux Support Engineer</strong> (Apr 2019–May 2020)<br>Handled Linux server management, client escalations, and web hosting support. Provided L2-level technical support for US-based clients.</li>
+        <li><strong>Linux Support Engineer</strong> (Apr 2016–Apr 2019)<br>Managed Linux servers and supported web hosting. Offered customer technical support for US-based clients.</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Education</h2>
-            <p>B.Tech in Electronics & Communication Engineering – Mahatma Gandhi University, Kerala</p>
-        </section>
-    </main>
+    <section class="reveal">
+      <h2>Projects</h2>
+      <div class="gallery">
+        <a class="project-card" href="#" aria-label="Cloud Migration">
+          <h3>Cloud Migration</h3>
+          <p>Migrated workloads from Rackspace to AWS; optimized architecture and reduced infra cost by 30%.</p>
+        </a>
+        <a class="project-card" href="#" aria-label="Disaster Recovery">
+          <h3>Disaster Recovery</h3>
+          <p>Built DR infra using Terraform in an Active-Passive model ensuring minimal RTO/RPO.</p>
+        </a>
+        <a class="project-card" href="#" aria-label="CI/CD Transformation">
+          <h3>CI/CD Transformation</h3>
+          <p>Created a robust GitHub Actions pipeline for automatic deployment and alerting on AWS.</p>
+        </a>
+        <a class="project-card" href="#" aria-label="Compliance Readiness">
+          <h3>Compliance Readiness</h3>
+          <p>Helped fintech client pass multiple regulatory audits by improving infra logging and IAM policies.</p>
+        </a>
+      </div>
+    </section>
 
-    <footer>
-        <p>© 2025 Arun Seby • Built with ❤️</p>
-    </footer>
+    <section class="reveal">
+      <h2>Education</h2>
+      <p>B.Tech in Electronics & Communication Engineering – Mahatma Gandhi University, Kerala</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Arun Seby • Built with ❤️</p>
+  </footer>
+
+  <!-- Scripts: typewriter + simple reveal -->
+  <script>
+    // Typewriter for terminal whoami (DevSecOps-flavored)
+    (function(){
+      const phrases = [
+        "Arun Seby – DevSecOps Architect",
+        "Cloud Infrastructure Automator",
+        "Security-First Engineer",
+        "CI/CD Pipeline Builder",
+        "Incident-Ready & Audit-Ready"
+      ];
+      const el = document.getElementById("typer");
+      const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (prefersReduced) { el.textContent = phrases[0]; return; }
+
+      let i = 0, j = 0, del = false;
+      const type = () => {
+        const word = phrases[i % phrases.length];
+        if (!del) {
+          el.textContent = word.slice(0, ++j);
+          if (j === word.length) { del = true; return setTimeout(type, 1200); }
+        } else {
+          el.textContent = word.slice(0, --j);
+          if (j === 0) { del = false; i++; }
+        }
+        setTimeout(type, del ? 40 : 65);
+      };
+      type();
+    })();
+
+    // Reveal on scroll (no library)
+    (function(){
+      const els = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('show');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
 </body>
 </html>
